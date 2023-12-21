@@ -22,13 +22,13 @@ function Home() {
     <section className="py-4">
       <div className=" max-w-[1440px] mx-auto px-4">
         <div className="pb-8 flex gap-4 justify-center items-center">
-          <SpotifyIcon />
+          <SpotifyIcon className="min-w-[24px]" />
           <h1 className="text-3xl font-bold ">
             Fined artist Name from Spotify PlayList
           </h1>
         </div>
 
-        <div className="flex gap-4 items-center justify-between pb-8 max-w-[1000px] mx-auto">
+        <div className="flex gap-4 items-center justify-between flex-col pb-8 max-w-[1000px] mx-auto sm:flex-row ">
           <Input
             variant="flat"
             color="secondary"
@@ -40,6 +40,7 @@ function Home() {
             color="secondary"
             variant="flat"
             type="button"
+            className="px-8"
             onClick={(e) => refetch()}
           >
             Get Artist Name
